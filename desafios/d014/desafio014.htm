@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabela desafio 14</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            
+        }
+        thead {
+            background-color: lightgray;
+            color: white;
+            
+        }
+        th {
+            background-color: lightgray;
+
+        }
+        tr, th, td {
+            border: 1px solid gray;
+            padding: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Notas e Médias</h1>
+    <table>
+        <caption>
+            Tabela contendo as Notas e as Médias
+        </caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Área</th>
+                <th rowspan="2" scope="rowgroup">Disciplina</th>
+                <th colspan="2" scope="rowgroup">Notas</th>
+                <th rowspan="2" scope="rowgroup">Médias</th>
+            </tr>
+            <tr>
+                    <td>Nota 1</td>
+                    <td>Nota 2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="col">Exatas</th>
+                <td>Matemática</td>
+                <td>o.o</td>
+                <td>o.o</td>
+                <td>o.o</td>
+            </tr>
+
+            <tr>
+                <td>Física</td>
+                <td>o.o</td>
+                <td>o.o</td>
+                <td>o.o</td>
+            </tr>
+
+            <tr>
+                <td>Química</td>
+                <td>o.o</td>
+                <td>o.o</td>
+                <td>o.o</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>o.o</td>
+                <td>o.o</td>
+                <td>o.o</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">Média de Exatas</th>
+                <td>o.o</td>
+            </tr>
+             <tr>
+                <th rowspan="2" scope="col">Humanas</th>
+                <td>História</td>
+                <td>o.o</td>
+                <td>o.o</td>
+                <td>o.o</td>
+            </tr>
+
+            <tr>
+                <td>Geografia</td>
+                <td>o.o</td>
+                <td>o.o</td>
+                <td>o.o</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">Média de Humanas</th>
+                <td>0.0</td>
+            </tr>
+           
+        </tbody>
+    </table>
+
+    
+</body>
+</html>

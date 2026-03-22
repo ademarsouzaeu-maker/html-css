@@ -9,19 +9,35 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            width: 400px;
-
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 8px;
         }
-        thead {
-            background-color: gray;
+        thead, tfoot{
+            background-color: black;
             color: white;
+        }
+        thead  > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: black;
+
         }
         td.num {
             text-align: right;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -30,6 +46,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBORY
@@ -39,10 +56,11 @@
 
     -->
     <Table>
+        <caption>População das Unidades Federativas</caption>
         <THead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px">População</th>
             </tr>
             
         </THead>
@@ -63,10 +81,90 @@
                 <td>Bahia</td>
                 <td class="num">14.873.064</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.519.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+.            </tr>.
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.519.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+.            </tr>.
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.519.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+.            </tr>.
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.519.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+.            </tr>.
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.519.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+.            </tr>.
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
         </TBODY>
         <tfoot>
             <tr>
-                <th>Total de Habitantes
+                <th scope="row">Total de Habitantes
                 <td class="num"><strong>000000</strong></td>
                     
             </tr>
